@@ -1,0 +1,28 @@
+object DBForm: TDBForm
+  Left = 0
+  Top = 0
+  Caption = 'DBForm'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\FAKS\Hotel-Nabavka\hotelNabavka.db'
+      'DriverID=SQLite')
+    Left = 512
+    Top = 88
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    Left = 512
+    Top = 192
+  end
+  object FDQuery2: TFDQuery
+    Connection = FDConnection1
+    Left = 512
+    Top = 136
+  end
+end

@@ -1,0 +1,41 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 445
+  ClientWidth = 457
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object DobavljaciButton: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Dobavljaci'
+    OnClick = DobavljaciButtonClick
+  end
+  object PorucivanjeButton: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Porucivanje'
+    OnClick = PorucivanjeButtonClick
+  end
+  object MagacinButton: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Magacin'
+    OnClick = MagacinButtonClick
+  end
+end

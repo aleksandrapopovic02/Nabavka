@@ -1,0 +1,60 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  Caption = 'Form9'
+  ClientHeight = 347
+  ClientWidth = 740
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.Y = 56.000000000000000000
+    Size.Width = 745.000000000000000000
+    Size.Height = 289.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 0
+    Viewport.Width = 745.000000000000000000
+    Viewport.Height = 289.000000000000000000
+    object StringColumn1: TStringColumn
+      Header = 'id'
+    end
+    object StringColumn2: TStringColumn
+      Header = 'Opis zahteva'
+      Size.Width = 420.000000000000000000
+    end
+    object StringColumn3: TStringColumn
+      Header = 'Datum zahtevanja'
+      Size.Width = 103.000000000000000000
+    end
+    object StringColumn4: TStringColumn
+      Header = 'Prihvaceno'
+    end
+  end
+  object Button1: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 1
+    Text = 'prihvati zahtev'
+    OnClick = Button1Click
+  end
+  object menjajeEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 8.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'id'
+    TabOrder = 3
+  end
+end

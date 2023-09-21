@@ -1,0 +1,188 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'Form8'
+  ClientHeight = 486
+  ClientWidth = 883
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Adresa: TLabel
+    Position.X = 344.000000000000000000
+    Position.Y = 384.000000000000000000
+    Text = 'Adresa'
+    TabOrder = 19
+  end
+  object AdresaEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 344.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object brisanjeEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Position.X = 608.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object BrTelEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 200.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 116.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object DrzavaEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 48.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 124.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object GradEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 200.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 116.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 288.000000000000000000
+    Text = 'Dadavanje dobavljaca'
+    TabOrder = 10
+  end
+  object label17: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 328.000000000000000000
+    Text = 'Br tel'
+    TabOrder = 14
+  end
+  object Label2: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 328.000000000000000000
+    Text = 'Naziv'
+    TabOrder = 11
+  end
+  object Label4: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 384.000000000000000000
+    Text = 'Drzava'
+    TabOrder = 13
+  end
+  object Label6: TLabel
+    Position.X = 344.000000000000000000
+    Position.Y = 328.000000000000000000
+    Text = 'E-Mail'
+    TabOrder = 15
+  end
+  object Label7: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 384.000000000000000000
+    Text = 'Grad'
+    TabOrder = 16
+  end
+  object Label8: TLabel
+    Position.X = 624.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Brisanje dobavljaca'
+    TabOrder = 17
+  end
+  object Label9: TLabel
+    Position.X = 624.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 17.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'id'
+    TabOrder = 18
+  end
+  object mailEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 344.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object NazivEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 48.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 124.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 881.000000000000000000
+    Size.Height = 273.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    RowCount = 0
+    Viewport.Width = 877.000000000000000000
+    Viewport.Height = 248.000000000000000000
+    object StringColumn1: TStringColumn
+      Header = 'id'
+      Size.Width = 57.000000000000000000
+    end
+    object StringColumn2: TStringColumn
+      Header = 'Naziv'
+      Size.Width = 135.000000000000000000
+    end
+    object StringColumn3: TStringColumn
+      Header = 'Drzava'
+      Size.Width = 127.000000000000000000
+    end
+    object StringColumn4: TStringColumn
+      Header = 'Grad'
+      Size.Width = 135.000000000000000000
+    end
+    object StringColumn5: TStringColumn
+      Header = 'Adresa'
+      Size.Width = 135.000000000000000000
+    end
+    object StringColumn6: TStringColumn
+      Header = 'Br tel'
+      Size.Width = 127.000000000000000000
+    end
+    object StringColumn7: TStringColumn
+      Header = 'E-Mail'
+      Size.Width = 135.000000000000000000
+    end
+  end
+  object Button1: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 448.000000000000000000
+    TabOrder = 20
+    Text = 'Dodaj'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 664.000000000000000000
+    Position.Y = 336.000000000000000000
+    TabOrder = 21
+    Text = 'Brisanje'
+    OnClick = Button2Click
+  end
+end

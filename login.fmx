@@ -1,0 +1,46 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 359
+  ClientWidth = 328
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object SifraEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 104.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 108.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object login: TButton
+    Position.X = 120.000000000000000000
+    Position.Y = 160.000000000000000000
+    TabOrder = 1
+    Text = 'Prijavi se'
+    OnClick = loginClick
+  end
+  object ZhatevButton: TButton
+    Position.X = 168.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 152.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Popuni zahtev za nabavku'
+    OnClick = ZhatevButtonClick
+  end
+  object Label1: TLabel
+    Position.X = 128.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Unesi sifru'
+    TabOrder = 3
+  end
+end

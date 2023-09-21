@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4703D016-6185-4ACC-A976-CC20EC9D90E3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="HotelNabavka.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="HotelNabavka">
+        <MSBuild Projects="HotelNabavka.dproj"/>
+    </Target>
+    <Target Name="HotelNabavka:Clean">
+        <MSBuild Projects="HotelNabavka.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HotelNabavka:Make">
+        <MSBuild Projects="HotelNabavka.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="HotelNabavka"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="HotelNabavka:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="HotelNabavka:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

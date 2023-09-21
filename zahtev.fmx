@@ -1,0 +1,55 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 414
+  ClientWidth = 455
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 168.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Zahtev za nabavku'
+    TabOrder = 0
+  end
+  object DateEdit1: TDateEdit
+    Date = 45169.000000000000000000
+    Position.X = 336.000000000000000000
+    Position.Y = 296.000000000000000000
+    TabOrder = 1
+  end
+  object PosaljiButton: TButton
+    Position.X = 168.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Posalji zahtev'
+    OnClick = PosaljiButtonClick
+  end
+  object ZahtevEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    TextSettings.VertAlign = Leading
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 433.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label2: TLabel
+    Position.X = 336.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Datum zahtevanja'
+    TabOrder = 4
+  end
+end
